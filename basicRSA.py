@@ -12,14 +12,15 @@ def generate_e(H):
         else:
             e += 2
 
-p = generate_prime(52)
-q = generate_prime(52)
+p = generate_prime(20)
+q = generate_prime(20)
 N = p * q
+print(p,q,N)
 H = (p-1) * (q-1)
 e = generate_e(H)
 public_key = (N,e)
 d = pow(e, -1, H)
-msg = generate_prime(52)
+msg = generate_prime(10)
 print(msg)
 encrypt = pow(msg, e, N)
 print(encrypt)
