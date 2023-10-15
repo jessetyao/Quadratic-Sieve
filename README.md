@@ -10,7 +10,7 @@ In the realm of cryptography and number theory, the ability to factorize integer
 
 ### Important Notes
 * This was specifically designed to break the RSA scheme which means numbers are normally meant to be the product of very large prime numbers
-* My code can factor a 52-bit integer in under 5 minutes. Anything bigger and you might have to wait a while
+* My code can factor a up to 52-bit integer. Anything bigger and you might have to wait a while
 * basicRSA.py just sents up a basic RSA scheme and proves I can figure out the encoded message
 * My function structure was inspired by [alexbers](https://github.com/alexbers), but everything else was implemented differently
 
