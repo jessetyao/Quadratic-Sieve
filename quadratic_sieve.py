@@ -174,4 +174,3 @@ def quadratic_sieve(N):
             
         smooth_nums.remove(dependent_subset[0])
 
-print(quadratic_sieve(559274294237))

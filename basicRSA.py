@@ -1,5 +1,6 @@
 import math
 from Crypto.Util import number
+from quadratic_sieve import quadratic_sieve
 
 def generate_prime(n):
     return number.getPrime(n)
@@ -27,7 +28,12 @@ print(encrypt)
 decrypt = pow(encrypt, d, N)
 print(decrypt)
 
-# def break_Rsa (public_key, encrypt):
-#     n, e = public_key
+def break_Rsa (public_key, encrypt):
+    N, e = public_key
+    p, q = quadratic_sieve (N)
+    H = (p-1) * (q-1)
+    d = pow(e, -1, H)
+    decrypt = pow(encrypt, d, N)
+    return decrypt
 
-
+print(break_Rsa(public_key, encrypt))
