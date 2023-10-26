@@ -15,6 +15,5 @@ In the realm of cryptography and number theory, the ability to factorize integer
 * My function structure was inspired by [alexbers](https://github.com/alexbers), but everything else was implemented differently
 
 
-
 ## Thank You!
   
